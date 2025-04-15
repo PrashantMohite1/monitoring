@@ -1,0 +1,19 @@
+global:
+  resolve_timeout: 5m
+
+route:
+  receiver: 'ses-email'
+
+receivers:
+  - name: 'ses-email'
+    email_configs:
+      - to: 'mohitep1407@gmail.com'
+        from: 'mohitep2704@gmail.com'   # Verified SES sender
+        smarthost: 'email-smtp.us-east-1.amazonaws.com:587'
+        auth_username: 'AKIAVXR7PXK5P6F5EYXH'
+        auth_identity: 'AKIAVXR7PXK5P6F5EYXH'
+        auth_password: 'BOW6CgOtmv2j3rJIpm2a2GGLwspkM23jOZt4TJb97zME'
+        require_tls: true
+
+
+
